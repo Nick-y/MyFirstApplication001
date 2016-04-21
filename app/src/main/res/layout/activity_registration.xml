@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/rlyt_main"
+    android:background="#ebebeb">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:elevation="2dp"
+        android:background="#fbc02d"
+        android:id="@+id/rlyt_toolbar">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgBtn_return"
+            android:src="@drawable/ic_arrow_back_24dp"
+            android:background="@android:color/transparent"
+            android:layout_alignBottom="@+id/imgBtn_menu"
+            android:layout_marginLeft="20dp"
+            android:contentDescription="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_sing_up"
+            android:id="@+id/txt_sing_up"
+            android:layout_toRightOf="@+id/imgBtn_return"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgBtn_menu"
+            android:src="@drawable/ic_more_vert_sign_up"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/text_username"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="13sp"
+        android:ems="17"
+        android:id="@+id/editTxt_user"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/rlyt_toolbar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignLeft="@+id/txt_account"
+        android:layout_alignStart="@+id/txt_account" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/img_usr"
+        android:src="@drawable/ic_person_24dp_us"
+        android:layout_alignBottom="@+id/editTxt_user"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:text="@string/text_email"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="13sp"
+        android:ems="17"
+        android:id="@+id/editTxt_email"
+        android:layout_below="@+id/img_usr"
+        android:layout_alignLeft="@+id/editTxt_user"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/img_email"
+        android:layout_alignBottom="@+id/editTxt_email"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/ic_email_24dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:text="@string/txt_password"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="13sp"
+        android:ems="17"
+        android:id="@+id/editTxt_passw"
+        android:layout_below="@+id/img_email"
+        android:layout_alignLeft="@+id/editTxt_email"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/img_passw"
+        android:layout_alignBottom="@+id/editTxt_passw"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/ic_lock_24dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/text_profile"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="13sp"
+        android:ems="17"
+        android:id="@+id/editTxt_profileuser"
+        android:layout_below="@+id/img_passw"
+        android:layout_alignLeft="@+id/editTxt_email"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/img_profile_name"
+        android:layout_alignBottom="@+id/editTxt_profileuser"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/ic_account_box_24dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="@string/button_sign_up"
+        android:id="@+id/btn_sign_up"
+        android:layout_below="@+id/img_profile_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:textSize="16sp"
+        android:elevation="3dp"
+        android:background="#eec340" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_account"
+        android:id="@+id/txt_account"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#eec23f"
+        android:textSize="16sp"
+        android:layout_marginBottom="25dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

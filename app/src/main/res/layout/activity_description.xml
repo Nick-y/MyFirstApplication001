@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/rlyt_main">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="top"
+        android:background="#00796b"
+        android:id="@+id/llyt_header">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/text_about_game"
+            android:id="@+id/txt_about_game"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/text_my_ach"
+            android:id="@+id/txt_my_ach"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/txt_about_game" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/text_rait_game"
+            android:id="@+id/txt_rait_game"
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@+id/txt_my_ach"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="3dp"
+            android:id="@+id/imageView"
+            android:background="@android:color/white"
+            android:layout_alignBottom="@+id/txt_about_game"
+            android:layout_marginLeft="5dp" />
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="3dp"
+        android:background="#fafafa"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_below="@id/llyt_header"
+        android:id="@+id/rlyt_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/llyt_playShare">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/play_layout">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/btn_play"
+                    android:id="@+id/btn_play"
+                    android:textAllCaps="false"
+                    android:background="@android:color/transparent"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="20dp"
+                    android:textColor="#747474" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_play"
+                    android:src="@drawable/ic_shop_24dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/share_layout">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/text_share"
+                    android:id="@+id/btn_share"
+                    android:textAllCaps="false"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="#747474" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_share"
+                    android:src="@drawable/ic_share_24dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/img_line"
+            android:layout_below="@+id/llyt_playShare"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#d5d5d5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_name"
+            android:id="@+id/txt_kadabr"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/img_line"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_achiev"
+            android:id="@+id/txt_achiev"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ic_ach"
+            android:layout_marginLeft="5dp"
+            android:layout_alignBottom="@+id/ic_ach"
+            android:layout_marginBottom="5dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:id="@+id/ic_ach"
+            android:src="@drawable/ic_achiev"
+            android:layout_below="@+id/txt_kadabr"
+            android:layout_marginTop="15dp"
+            android:layout_alignLeft="@+id/txt_kadabr" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_save"
+            android:id="@+id/txt_save"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ic_save"
+            android:layout_marginLeft="5dp"
+            android:layout_alignBottom="@+id/ic_save"
+            android:layout_marginBottom="5dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:id="@+id/ic_save"
+            android:src="@drawable/ic_save"
+            android:layout_below="@+id/ic_ach"
+            android:layout_alignLeft="@+id/txt_kadabr" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_rait"
+            android:id="@+id/txt_rait"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ic_crown"
+            android:layout_marginLeft="5dp"
+            android:layout_alignBottom="@+id/ic_crown"
+            android:layout_marginBottom="5dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:id="@+id/ic_crown"
+            android:src="@drawable/ic_crown"
+            android:layout_toRightOf="@+id/txt_achiev"
+            android:layout_below="@+id/txt_kadabr"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="55dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_descript"
+            android:id="@+id/txt_descript"
+            android:gravity="top"
+            android:textSize="16sp"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@+id/ic_save"
+            android:layout_marginTop="20dp"
+            android:layout_alignLeft="@+id/txt_kadabr" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_from"
+            android:id="@+id/txt_from"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@+id/txt_descript"
+            android:layout_alignLeft="@+id/txt_kadabr" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_sub"
+            android:id="@+id/txt_sub"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@+id/txt_from"
+            android:layout_alignLeft="@+id/txt_kadabr" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_cong"
+            android:id="@+id/txt_cong"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@+id/txt_sub"
+            android:layout_alignLeft="@+id/txt_kadabr" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_thanks"
+            android:id="@+id/txt_thanks"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/txt_cong"
+            android:layout_alignLeft="@+id/txt_kadabr" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
